@@ -32,3 +32,6 @@ UnitTestSessionAction 1444222142850 TestCell FAIL
 RefactoringAction 1444222156325 Cell.java ADD void setAlive() METHOD
 RefactoringAction 1444222161353 Cell.java RENAME setAlive()=>void setAlive(boolean) METHOD
 EditAction 1444222169691 Cell.java 231 2 2 0
+UnitTestCaseAction 1444222175174 TestCell.java FAIL
+UnitTestSessionAction 1444222175174 TestCell FAIL
+EditAction 1444222184639 TestCell.java 483 3 4 1
