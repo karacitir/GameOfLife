@@ -78,3 +78,18 @@ EditAction 1444222656547 Cell.java 448 3 3 0
 UnitTestCaseAction 1444222663138 TestCell.java FAIL
 UnitTestSessionAction 1444222663138 TestCell FAIL
 EditAction 1444222666864 TestCell.java 550 3 6 2
+CompilationAction 1444222667167 TestCell.java
+CompilationAction 1444222667168 TestCell.java
+CompilationAction 1444222667168 TestCell.java
+UnitTestCaseAction 1444222671596 TestCell.java FAIL
+UnitTestSessionAction 1444222671596 TestCell FAIL
+CompilationAction 1444222678503 TestCell.java
+CompilationAction 1444222678660 TestCell.java
+CompilationAction 1444222678661 TestCell.java
+CompilationAction 1444222678662 TestCell.java
+UnitTestCaseAction 1444222682332 TestCell.java FAIL
+UnitTestSessionAction 1444222682332 TestCell FAIL
+CompilationAction 1444222685753 TestCell.java
+CompilationAction 1444222685904 TestCell.java
+CompilationAction 1444222685904 TestCell.java
+EditAction 1444222688007 TestCell.java 550 3 6 2

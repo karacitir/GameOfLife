@@ -17,15 +17,15 @@ public class TestCell {
 	
 	@Test
 	public void testAlive() {
-		cell.setAlive(true);
+		cell.setState(true);
 		assertTrue(cell.getState());
 	}
 	
 	@Test 
 	public void testCellUpdateWithNoNeighbours() {
 		cell.setAlive(true);
-		cell.update();
-		assertFalse(cell.getState(0));	
+		cell.update(0);
+		assertFalse(cell.getState());	
 	}
 
 }
