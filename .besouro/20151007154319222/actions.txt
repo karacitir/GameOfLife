@@ -64,3 +64,8 @@ EditAction 1444222481425 TestCell.java 549 3 6 2
 UnitTestCaseAction 1444222481807 TestCell.java OK
 UnitTestSessionAction 1444222481808 TestCell OK
 EditAction 1444222498227 TestCell.java 549 3 6 2
+CompilationAction 1444222498544 TestCell.java
+RefactoringAction 1444222507275 Cell.java RENAME getAlive()=>boolean getState() METHOD
+RefactoringAction 1444222510285 Cell.java RENAME setAlive(boolean)=>void setState(boolean) METHOD
+RefactoringAction 1444222512793 Cell.java RENAME alive=>boolean state FIELD
+EditAction 1444222532980 Cell.java 286 3 3 0

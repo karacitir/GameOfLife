@@ -2,17 +2,17 @@ package org.univoulu.tol.sqatlab.gameoflife;
 
 public class Cell {
 
-	private boolean alive = false;
+	private boolean state = false;
 	
-	public void setAlive(boolean alive) {
-		this.alive = alive;
+	public void setState(boolean state) {
+		this.state = state;
 	}
 	
-	public boolean getAlive() {
-		return alive;
+	public boolean getState() {
+		return state;
 	}
 	
 	public void update() {
-		this.alive = false;
+		this.state = false;
 	}
 }
