@@ -18,7 +18,7 @@ public class TestCell {
 	@Test
 	public void testAlive() {
 		cell.setAlive(true);
-		assertEquals(1, cell.getAlive());
+		assertEquals(true, cell.getAlive());
 	}
 	
 	@Test
