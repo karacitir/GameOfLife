@@ -16,3 +16,19 @@ CompilationAction 1444222003975 TestCell.java
 RefactoringAction 1444222025179 Cell.java ADD boolean alive FIELD
 RefactoringAction 1444222038708 Cell.java ADD boolean getAlive() METHOD
 EditAction 1444222046123 Cell.java 161 1 1 0
+CompilationAction 1444222046405 TestCell.java
+CompilationAction 1444222046406 TestCell.java
+CompilationAction 1444222046407 TestCell.java
+FileOpenedAction 1444222079794 TestSudokuVerifier.java 2597 11 28 7
+CompilationAction 1444222096962 TestCell.java
+CompilationAction 1444222096963 TestCell.java
+CompilationAction 1444222097009 TestCell.java
+UnitTestCaseAction 1444222101343 TestCell.java FAIL
+UnitTestCaseAction 1444222101343 TestGrid.java FAIL
+UnitTestSessionAction 1444222101347 GameOfLife FAIL
+CompilationAction 1444222142585 TestCell.java
+UnitTestCaseAction 1444222142848 TestCell.java FAIL
+UnitTestSessionAction 1444222142850 TestCell FAIL
+RefactoringAction 1444222156325 Cell.java ADD void setAlive() METHOD
+RefactoringAction 1444222161353 Cell.java RENAME setAlive()=>void setAlive(boolean) METHOD
+EditAction 1444222169691 Cell.java 231 2 2 0
