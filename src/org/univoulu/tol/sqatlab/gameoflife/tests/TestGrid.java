@@ -37,7 +37,7 @@ public class TestGrid {
 	public void testFindAliveNeighbours() {
 		ArrayList<Cell> neighbours = grid.getNeighbours(1, 1);
 		neighbours.get(0).setState(true);
-		aliveNeighbours = grid.getAliveNeighbours(1, 1);
+		ArrayList<Cell> aliveNeighbours = grid.getAliveNeighbours(1, 1);
 		assertEquals(1, aliveNeighbours.size());
 		
 	}

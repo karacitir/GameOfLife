@@ -265,3 +265,10 @@ RefactoringAction 1444224682151 TestGrid.java RENAME testFindAliveNei=>void test
 RefactoringAction 1444224738429 Grid.java ADD ArrayList<Cell> getNeighbours(int, int)/2 METHOD
 EditAction 1444224740591 Grid.java 1350 7 14 0
 EditAction 1444224771302 TestGrid.java 974 4 10 4
+CompilationAction 1444224771541 TestGrid.java
+CompilationAction 1444224771541 TestGrid.java
+CompilationAction 1444224782192 TestGrid.java
+CompilationAction 1444224782192 TestGrid.java
+UnitTestCaseAction 1444224784025 TestGrid.java FAIL
+UnitTestSessionAction 1444224784026 TestGrid FAIL
+EditAction 1444224854190 TestGrid.java 990 4 10 4
