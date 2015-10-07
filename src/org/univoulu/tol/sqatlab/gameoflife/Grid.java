@@ -32,8 +32,9 @@ public class Grid {
 			for (int y = i2 -1; y < i2 + 2; y++ ) {
 			
 				Cell cell = cells[x][y];
+				
 				if (x != i1 && y != i2)
-				neighbours.add(cell);
+					neighbours.add(cell);
 			}
 		}
 		
