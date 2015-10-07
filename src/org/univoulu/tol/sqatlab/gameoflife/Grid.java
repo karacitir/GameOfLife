@@ -23,7 +23,7 @@ public class Grid {
 	}
 	
 	public Cell[][] getNeighbours(int x, int y) {
-		
+		return null;
 	}
 	
 	public Cell[][] getCells() {

@@ -184,3 +184,6 @@ EditAction 1444223553089 Grid.java 505 6 6 0
 CompilationAction 1444223553420 Grid.java
 RefactoringAction 1444223605796 TestGrid.java ADD import org.univoulu.tol.sqatlab.gameoflife.Cell IMPORT
 EditAction 1444223606473 TestGrid.java 661 3 6 3
+UnitTestCaseAction 1444223613938 TestGrid.java FAIL
+UnitTestSessionAction 1444223613938 TestGrid FAIL
+EditAction 1444223621723 Grid.java 517 6 7 0
