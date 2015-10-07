@@ -260,3 +260,7 @@ EditAction 1444224626668 Cell.java 454 3 3 0
 UnitTestCaseAction 1444224627187 TestGrid.java OK
 UnitTestSessionAction 1444224627187 TestGrid OK
 EditAction 1444224647682 Grid.java 923 6 10 0
+RefactoringAction 1444224678145 TestGrid.java ADD void testFindAliveNei FIELD
+RefactoringAction 1444224682151 TestGrid.java RENAME testFindAliveNei=>void testFindAliveNeighbours() METHOD
+RefactoringAction 1444224738429 Grid.java ADD ArrayList<Cell> getNeighbours(int, int)/2 METHOD
+EditAction 1444224740591 Grid.java 1350 7 14 0

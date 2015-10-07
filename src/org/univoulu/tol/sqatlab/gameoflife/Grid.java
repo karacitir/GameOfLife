@@ -46,6 +46,27 @@ public class Grid {
 		return neighbours;
 	}
 	
+	public ArrayList<Cell> getAliveNeighbours(int i1, int i2) {
+		ArrayList<Cell> neighbours = new ArrayList<>();
+		
+		Cell focus = cells[i1][i2];
+		
+		for (int x = i1 - 1; x < i1 + 2; x++) {
+			for (int y = i2 - 1; y < i2 + 2; y++ ) {
+			
+				Cell cell = cells[x][y];
+				
+				neighbours.add(cell);
+				
+				if (x == i1 && y == i2) {
+					neighbours.remove(cell);
+				}
+			}
+		}
+		
+		return neighbours;
+	}
+	
 	public Cell[][] getCells() {
 		return cells;
 	}
