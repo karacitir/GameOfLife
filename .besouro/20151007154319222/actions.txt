@@ -60,3 +60,4 @@ UnitTestCaseAction 1444222445365 TestCell.java FAIL
 UnitTestSessionAction 1444222445365 TestCell FAIL
 RefactoringAction 1444222458636 Cell.java ADD void update() METHOD
 EditAction 1444222468348 Cell.java 286 3 3 0
+EditAction 1444222481425 TestCell.java 549 3 6 2
