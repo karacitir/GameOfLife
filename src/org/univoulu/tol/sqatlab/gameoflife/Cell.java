@@ -12,7 +12,7 @@ public class Cell {
 		return state;
 	}
 	
-	public void update() {
+	public void update(int aliveNeighbours) {
 		this.state = false;
 	}
 }

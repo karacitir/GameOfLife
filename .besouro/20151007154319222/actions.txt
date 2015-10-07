@@ -69,3 +69,6 @@ RefactoringAction 1444222507275 Cell.java RENAME getAlive()=>boolean getState() 
 RefactoringAction 1444222510285 Cell.java RENAME setAlive(boolean)=>void setState(boolean) METHOD
 RefactoringAction 1444222512793 Cell.java RENAME alive=>boolean state FIELD
 EditAction 1444222532980 Cell.java 286 3 3 0
+CompilationAction 1444222533158 TestCell.java
+RefactoringAction 1444222542370 Cell.java RENAME update()=>void update(int) METHOD
+EditAction 1444222549854 Cell.java 305 3 3 0
