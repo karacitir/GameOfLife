@@ -132,3 +132,11 @@ RefactoringAction 1444222982518 Grid.java ADD Cell FIELD
 RefactoringAction 1444222986032 Grid.java RENAME getC=>Cell METHOD
 EditAction 1444222987648 Grid.java 155 1 1 0
 EditAction 1444223025159 TestGrid.java 408 2 2 1
+UnitTestCaseAction 1444223027487 TestGrid.java FAIL
+UnitTestSessionAction 1444223027489 TestGrid FAIL
+RefactoringAction 1444223050144 Grid.java ADD Grid() METHOD
+RefactoringAction 1444223052156 Grid.java RENAME Grid()=>Grid(int) METHOD
+RefactoringAction 1444223150856 Grid.java ADD int width FIELD
+RefactoringAction 1444223154888 Grid.java ADD int hie FIELD
+RefactoringAction 1444223157399 Grid.java RENAME hie=>int heigth FIELD
+EditAction 1444223175935 Grid.java 262 2 3 0
