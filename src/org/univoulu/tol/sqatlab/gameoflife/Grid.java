@@ -18,6 +18,10 @@ public class Grid {
 		return size;
 	}
 	
+	public void initializeGrid() {
+		
+	}
+	
 	public Cell[][] getCells() {
 		return cells;
 	}
