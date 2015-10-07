@@ -22,8 +22,9 @@ public class Grid {
 		
 	}
 	
-	public Cell[][] getNeighbours(int x, int y) {
-		return null;
+	public List<Cell> getNeighbours(int x, int y) {
+		List<Cell> neighbours = new ArrayList<>();
+		return neighbours;
 	}
 	
 	public Cell[][] getCells() {
