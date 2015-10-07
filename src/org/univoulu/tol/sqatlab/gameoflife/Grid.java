@@ -33,6 +33,7 @@ public class Grid {
 			
 				Cell cell = cells[x][y];
 				System.out.println(x + " " + y);
+				
 				if (x != i1 && y != i2)
 					neighbours.add(cell);
 			}
