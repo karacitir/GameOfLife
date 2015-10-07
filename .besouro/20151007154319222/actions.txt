@@ -215,3 +215,15 @@ CompilationAction 1444223765011 TestGrid.java
 UnitTestCaseAction 1444223769796 TestGrid.java FAIL
 UnitTestSessionAction 1444223769797 TestGrid FAIL
 EditAction 1444223786827 Grid.java 631 6 8 0
+CompilationAction 1444223787240 Grid.java
+CompilationAction 1444223787240 TestGrid.java
+CompilationAction 1444223796826 Grid.java
+UnitTestCaseAction 1444223801307 TestGrid.java FAIL
+UnitTestSessionAction 1444223801308 TestGrid FAIL
+RefactoringAction 1444223809962 TestGrid.java ADD import java.util.ArrayList IMPORT
+CompilationAction 1444223812889 TestGrid.java
+UnitTestCaseAction 1444223813158 TestGrid.java FAIL
+UnitTestSessionAction 1444223813158 TestGrid FAIL
+RefactoringAction 1444223891967 Grid.java RENAME getNeighbours(int, int)=>ArrayList<Cell> getANeighbours(int, int) METHOD
+RefactoringAction 1444223893482 Grid.java RENAME getANeighbours(int, int)=>ArrayList<Cell> getAliveNeighbours(int, int) METHOD
+EditAction 1444223893527 Grid.java 641 6 8 0

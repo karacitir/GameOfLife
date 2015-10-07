@@ -3,6 +3,7 @@ package org.univoulu.tol.sqatlab.gameoflife.tests;
 import static org.junit.Assert.*;
 
 import java.awt.List;
+import java.util.ArrayList;
 
 import org.junit.Before;
 import org.junit.Test;

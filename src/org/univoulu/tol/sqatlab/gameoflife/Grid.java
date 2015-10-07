@@ -25,8 +25,8 @@ public class Grid {
 		
 	}
 	
-	public ArrayList<Cell> getNeighbours(int x, int y) {
-		List<Cell> neighbours = new ArrayList<>();
+	public ArrayList<Cell> getAliveNeighbours(int x, int y) {
+		ArrayList<Cell> neighbours = new ArrayList<>();
 		return neighbours;
 	}
 	
