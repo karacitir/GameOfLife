@@ -227,3 +227,6 @@ UnitTestSessionAction 1444223813158 TestGrid FAIL
 RefactoringAction 1444223891967 Grid.java RENAME getNeighbours(int, int)=>ArrayList<Cell> getANeighbours(int, int) METHOD
 RefactoringAction 1444223893482 Grid.java RENAME getANeighbours(int, int)=>ArrayList<Cell> getAliveNeighbours(int, int) METHOD
 EditAction 1444223893527 Grid.java 641 6 8 0
+CompilationAction 1444223893898 TestGrid.java
+RefactoringAction 1444223901673 Grid.java RENAME getAliveNeighbours(int, int)=>ArrayList<Cell> getNeighbours(int, int) METHOD
+EditAction 1444223963731 Grid.java 679 6 6 0
