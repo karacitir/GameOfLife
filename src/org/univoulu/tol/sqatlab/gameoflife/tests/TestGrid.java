@@ -17,6 +17,7 @@ public class TestGrid {
 	
 	@Test
 	public void testCreateGrid30by30() {
+		grid.setSize(30);
 		assertEquals(30, grid.getSize());
 	}
 

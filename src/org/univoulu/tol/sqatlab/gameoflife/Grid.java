@@ -10,7 +10,7 @@ public class Grid {
 		this.size = size;
 	}
 	
-	public int setSize(int size) {
+	public void setSize(int size) {
 		cells = new Cell[size][size];
 		this.size = size;
 	}

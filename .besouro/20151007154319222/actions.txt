@@ -157,3 +157,8 @@ UnitTestSessionAction 1444223239058 TestGrid FAIL
 RefactoringAction 1444223249062 Grid.java ADD int setSize() METHOD
 RefactoringAction 1444223250572 Grid.java RENAME setSize()=>int setSize(int) METHOD
 EditAction 1444223269523 Grid.java 401 4 6 0
+CompilationAction 1444223269937 Grid.java
+CompilationAction 1444223288108 Grid.java
+UnitTestCaseAction 1444223294623 TestGrid.java FAIL
+UnitTestSessionAction 1444223294623 TestGrid FAIL
+EditAction 1444223302807 TestGrid.java 423 2 3 1
