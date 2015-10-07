@@ -22,7 +22,12 @@ public class Grid {
 	}
 	
 	public void initializeGrid() {
-		
+		for (int x = 0; x < size; x++) {
+			
+			for (int y = 0; y < size; y++) {
+				cells[x][y] = new Cell();
+			}
+		}
 	}
 	
 	public ArrayList<Cell> getNeighbours(int i1, int i2) {
@@ -33,12 +38,15 @@ public class Grid {
 		for (int x = i1 - 1; x < i1 + 2; x++) {
 			for (int y = i2 - 1; y < i2 + 2; y++ ) {
 			
-				Cell cell = cells[x][y];
+				if (x >= 0 && x < size && y >= 0 && y < size) {
 				
-				neighbours.add(cell);
-				
-				if (x == i1 && y == i2) {
-					neighbours.remove(cell);
+					Cell cell = cells[x][y];
+					
+					neighbours.add(cell);
+					
+					if (x == i1 && y == i2) {
+						neighbours.remove(cell);
+					}
 				}
 			}
 		}
@@ -54,10 +62,12 @@ public class Grid {
 			
 				Cell cell = cells[x][y];
 				
-				neighbours.add(cell);
-				
-				if (x == i1 && y == i2) {
-					neighbours.remove(cell);
+				if (cell.getState()) {
+					neighbours.add(cell);
+					
+					if (x == i1 && y == i2) {
+						neighbours.remove(cell);
+					}
 				}
 			}
 		}

@@ -272,3 +272,21 @@ CompilationAction 1444224782192 TestGrid.java
 UnitTestCaseAction 1444224784025 TestGrid.java FAIL
 UnitTestSessionAction 1444224784026 TestGrid FAIL
 EditAction 1444224854190 TestGrid.java 990 4 10 4
+UnitTestCaseAction 1444224932562 TestGrid.java FAIL
+UnitTestSessionAction 1444224932563 TestGrid FAIL
+UnitTestCaseAction 1444224950583 TestGrid.java FAIL
+UnitTestSessionAction 1444224950584 TestGrid FAIL
+UnitTestCaseAction 1444225008317 TestGrid.java FAIL
+UnitTestSessionAction 1444225008317 TestGrid FAIL
+UnitTestCaseAction 1444225041653 TestGrid.java OK
+UnitTestSessionAction 1444225041653 TestGrid OK
+UnitTestCaseAction 1444225080009 TestGrid.java FAIL
+UnitTestSessionAction 1444225080009 TestGrid FAIL
+CompilationAction 1444225165844 Grid.java
+UnitTestCaseAction 1444225171899 TestGrid.java FAIL
+UnitTestSessionAction 1444225171900 TestGrid FAIL
+CompilationAction 1444225193480 Grid.java
+UnitTestCaseAction 1444225195600 TestGrid.java OK
+UnitTestSessionAction 1444225195600 TestGrid OK
+RefactoringAction 1444225264684 Grid.java REMOVE import java.util.List IMPORT
+RefactoringAction 1444225356837 TestGrid.java RENAME testFindAliveNeighbours()=>void testFindAliveNeighboursOne() METHOD

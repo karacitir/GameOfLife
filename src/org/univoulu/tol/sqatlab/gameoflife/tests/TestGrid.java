@@ -17,6 +17,7 @@ public class TestGrid {
 	@Before
 	public void setup() {
 		grid = new Grid(10);
+		grid.initializeGrid();
 	}
 	
 	@Test
@@ -34,11 +35,10 @@ public class TestGrid {
 	}
 	
 	@Test
-	public void testFindAliveNeighbours() {
+	public void testFindAliveNeighboursOne() {
 		ArrayList<Cell> neighbours = grid.getNeighbours(1, 1);
 		neighbours.get(0).setState(true);
 		ArrayList<Cell> aliveNeighbours = grid.getAliveNeighbours(1, 1);
 		assertEquals(1, aliveNeighbours.size());
-		
 	}
 }
