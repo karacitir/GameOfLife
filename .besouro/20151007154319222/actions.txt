@@ -48,3 +48,8 @@ EditAction 1444222260007 TestCell.java 478 3 4 1
 UnitTestCaseAction 1444222261815 TestCell.java FAIL
 UnitTestSessionAction 1444222261815 TestCell FAIL
 EditAction 1444222272962 TestCell.java 408 2 3 1
+UnitTestCaseAction 1444222275076 TestCell.java OK
+UnitTestSessionAction 1444222275077 TestCell OK
+RefactoringAction 1444222284550 TestCell.java ADD void testDead() METHOD
+RefactoringAction 1444222318654 TestCell.java RENAME testDead()=>void testCellUpdate FIELD
+EditAction 1444222346554 TestCell.java 493 3 4 2

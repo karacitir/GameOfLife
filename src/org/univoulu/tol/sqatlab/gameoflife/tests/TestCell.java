@@ -20,5 +20,11 @@ public class TestCell {
 		cell.setAlive(true);
 		assertTrue(cell.getAlive());
 	}
+	
+	@Test 
+	public void testCellUpdate() {
+		
+		assertTrue(cell.getAlive());
+	}
 
 }
