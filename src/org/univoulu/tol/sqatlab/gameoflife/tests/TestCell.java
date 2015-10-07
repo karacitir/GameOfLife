@@ -22,9 +22,11 @@ public class TestCell {
 	}
 	
 	@Test 
-	public void testCellUpdate() {
+	public void testCellUpdateWithNoNeighbours() {
+		cell.setAlive(true);
+		cell.update();
+		assertFalse(cell.getAlive());
 		
-		assertTrue(cell.getAlive());
 	}
 
 }

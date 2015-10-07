@@ -53,3 +53,5 @@ UnitTestSessionAction 1444222275077 TestCell OK
 RefactoringAction 1444222284550 TestCell.java ADD void testDead() METHOD
 RefactoringAction 1444222318654 TestCell.java RENAME testDead()=>void testCellUpdate FIELD
 EditAction 1444222346554 TestCell.java 493 3 4 2
+RefactoringAction 1444222368595 TestCell.java RENAME testCellUpdate()=>void testCellUpdateWithNoNeighbours() METHOD
+EditAction 1444222442937 TestCell.java 552 3 6 2
