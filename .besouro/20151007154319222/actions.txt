@@ -72,3 +72,6 @@ EditAction 1444222532980 Cell.java 286 3 3 0
 CompilationAction 1444222533158 TestCell.java
 RefactoringAction 1444222542370 Cell.java RENAME update()=>void update(int) METHOD
 EditAction 1444222549854 Cell.java 305 3 3 0
+CompilationAction 1444222550046 TestCell.java
+CompilationAction 1444222550046 TestCell.java
+EditAction 1444222656547 Cell.java 448 3 3 0

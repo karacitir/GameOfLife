@@ -13,6 +13,11 @@ public class Cell {
 	}
 	
 	public void update(int aliveNeighbours) {
-		this.state = false;
+		if (aliveNeighbours < 2)
+			this.state = false;
+		else if (aliveNeighbours == 3)
+			this.state = true;
+		else if (aliveNeighbours > 3)
+			this.state = false;
 	}
 }
