@@ -36,8 +36,12 @@ public class Grid {
 				Cell cell = cells[x][y];
 				System.out.println(x + " " + y);
 				
-				if (cell != focus)
-					neighbours.add(cell);
+				neighbours.add(cell);
+				
+				
+				if (x == i1 && y == i2) {
+					neighbours.remove(cell);
+				}
 			}
 		}
 		
