@@ -25,7 +25,7 @@ public class TestCell {
 	public void testCellUpdateWithNoNeighbours() {
 		cell.setAlive(true);
 		cell.update();
-		assertFalse(cell.getState());	
+		assertFalse(cell.getState(0));	
 	}
 
 }
