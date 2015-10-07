@@ -22,4 +22,9 @@ public class TestGrid {
 		assertEquals(30, grid.getCells().length);
 	}
 
+	@Test
+	public void testInitializeGrid() {
+		grid.initializeGrid();
+		
+	}
 }
