@@ -25,11 +25,16 @@ public class Grid {
 		
 	}
 	
-	public ArrayList<Cell> getNeighbours(int i, int i1) {
+	public ArrayList<Cell> getNeighbours(int i1, int i2) {
 		ArrayList<Cell> neighbours = new ArrayList<>();
 		
-		for (int x = i - 1; x < i)
-		
+		for (int x = i1 - 1; x < i1 + 2; x++) {
+			for (int y = i2 -1; y < i2 + 2; y++ ) {
+			
+				Cell cell = cells[x][y];
+				neighbours.add(cell);
+			}
+		}
 		
 		return neighbours;
 	}

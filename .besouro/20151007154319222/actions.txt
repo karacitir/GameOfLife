@@ -230,3 +230,10 @@ EditAction 1444223893527 Grid.java 641 6 8 0
 CompilationAction 1444223893898 TestGrid.java
 RefactoringAction 1444223901673 Grid.java RENAME getAliveNeighbours(int, int)=>ArrayList<Cell> getNeighbours(int, int) METHOD
 EditAction 1444223963731 Grid.java 679 6 6 0
+CompilationAction 1444223964052 Grid.java
+RefactoringAction 1444223966364 Grid.java RENAME getNeighbours(int, int)=>ArrayList<Cell> getNeighbours() METHOD
+RefactoringAction 1444223967880 Grid.java RENAME getNeighbours()=>ArrayList<Cell> getNeighbours(int, int) METHOD
+CompilationAction 1444223971821 Grid.java
+CompilationAction 1444223971986 Grid.java
+CompilationAction 1444223971987 Grid.java
+EditAction 1444224115256 Grid.java 806 6 9 0
