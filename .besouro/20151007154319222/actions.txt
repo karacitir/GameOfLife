@@ -150,3 +150,5 @@ RefactoringAction 1444223210504 Grid.java ADD int getSize() METHOD
 EditAction 1444223210837 Grid.java 304 3 4 0
 CompilationAction 1444223211096 TestGrid.java
 EditAction 1444223212705 Grid.java 310 3 4 0
+CompilationAction 1444223226318 TestGrid.java
+EditAction 1444223236024 TestGrid.java 402 2 2 1

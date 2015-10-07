@@ -12,7 +12,7 @@ public class TestGrid {
 	
 	@Before
 	public void setup() {
-		grid = new Grid();
+		grid = new Grid(10);
 	}
 	
 	@Test
