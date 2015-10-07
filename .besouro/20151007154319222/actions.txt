@@ -1,0 +1,12 @@
+FileOpenedAction 1444221799422 Cell.java 74 0 0 0
+FileOpenedAction 1444221804439 TestCell.java 216 1 1 0
+RefactoringAction 1444221811460 TestCell.java RENAME test()=>void testAl() METHOD
+RefactoringAction 1444221813474 TestCell.java RENAME testAl()=>void testAlive() METHOD
+RefactoringAction 1444221835504 TestCell.java RENAME testAlive()=>void test() METHOD
+RefactoringAction 1444221855582 TestCell.java ADD Cell testCell FIELD
+RefactoringAction 1444221860098 TestCell.java ADD void setup() METHOD
+RefactoringAction 1444221905811 TestCell.java RENAME testCell=>Cell cell FIELD
+RefactoringAction 1444221911356 TestCell.java ADD import org.univoulu.tol.sqatlab.gameoflife.Cell IMPORT
+RefactoringAction 1444221918704 TestCell.java ADD import org.junit.Before IMPORT
+RefactoringAction 1444221934420 TestCell.java ADD void testAlive() METHOD
+EditAction 1444221999251 TestCell.java 486 3 2 0
