@@ -2,6 +2,8 @@ package org.univoulu.tol.sqatlab.gameoflife.tests;
 
 import static org.junit.Assert.*;
 
+import java.awt.List;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.univoulu.tol.sqatlab.gameoflife.Cell;
@@ -25,8 +27,8 @@ public class TestGrid {
 
 	@Test
 	public void testFindNeighbours() {
-		Cell[][] neighbours = grid.getNeighbours(1, 1);
-		assertEquals(8, neighbours.length);
+		ArrayList<Cell> neighbours = grid.getNeighbours(1, 1);
+		assertEquals(8, neighbours.size());
 		
 	}
 }

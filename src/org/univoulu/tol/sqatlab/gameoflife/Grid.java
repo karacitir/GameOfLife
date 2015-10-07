@@ -1,5 +1,8 @@
 package org.univoulu.tol.sqatlab.gameoflife;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Grid {
 
 	private Cell[][] cells;
@@ -22,7 +25,7 @@ public class Grid {
 		
 	}
 	
-	public List<Cell> getNeighbours(int x, int y) {
+	public ArrayList<Cell> getNeighbours(int x, int y) {
 		List<Cell> neighbours = new ArrayList<>();
 		return neighbours;
 	}
