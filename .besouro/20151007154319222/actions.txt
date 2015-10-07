@@ -172,3 +172,12 @@ RefactoringAction 1444223384375 TestGrid.java RENAME testInitialize=>void testIn
 RefactoringAction 1444223398885 Grid.java ADD void initializeGrid() METHOD
 EditAction 1444223400084 Grid.java 446 5 6 0
 EditAction 1444223451942 TestGrid.java 547 3 5 2
+RefactoringAction 1444223493530 TestGrid.java RENAME testInitializeGrid()=>void testFind() METHOD
+RefactoringAction 1444223495040 TestGrid.java RENAME testFind()=>void testFindNeigh() METHOD
+RefactoringAction 1444223496550 TestGrid.java RENAME testFindNeigh()=>void testFindNeighbours() METHOD
+RefactoringAction 1444223538543 Grid.java ADD Cell FIELD
+RefactoringAction 1444223540054 Grid.java RENAME get=>Cell FIELD
+RefactoringAction 1444223542570 Grid.java RENAME getNeigh=>Cell FIELD
+RefactoringAction 1444223545082 Grid.java RENAME getNeighr=>Cell METHOD
+RefactoringAction 1444223550107 Grid.java RENAME getNeighbours()=>Cell METHOD
+EditAction 1444223553089 Grid.java 505 6 6 0
