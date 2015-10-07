@@ -140,3 +140,7 @@ RefactoringAction 1444223150856 Grid.java ADD int width FIELD
 RefactoringAction 1444223154888 Grid.java ADD int hie FIELD
 RefactoringAction 1444223157399 Grid.java RENAME hie=>int heigth FIELD
 EditAction 1444223175935 Grid.java 262 2 3 0
+CompilationAction 1444223176254 TestGrid.java
+UnitTestCaseAction 1444223183578 TestGrid.java FAIL
+UnitTestSessionAction 1444223183578 TestGrid FAIL
+EditAction 1444223195632 TestGrid.java 400 2 2 1
