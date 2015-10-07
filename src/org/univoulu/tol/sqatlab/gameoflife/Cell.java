@@ -11,4 +11,8 @@ public class Cell {
 	public boolean getAlive() {
 		return alive;
 	}
+	
+	public void update() {
+		this.alive = false;
+	}
 }

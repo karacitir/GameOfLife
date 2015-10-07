@@ -55,3 +55,8 @@ RefactoringAction 1444222318654 TestCell.java RENAME testDead()=>void testCellUp
 EditAction 1444222346554 TestCell.java 493 3 4 2
 RefactoringAction 1444222368595 TestCell.java RENAME testCellUpdate()=>void testCellUpdateWithNoNeighbours() METHOD
 EditAction 1444222442937 TestCell.java 552 3 6 2
+CompilationAction 1444222443037 TestCell.java
+UnitTestCaseAction 1444222445365 TestCell.java FAIL
+UnitTestSessionAction 1444222445365 TestCell FAIL
+RefactoringAction 1444222458636 Cell.java ADD void update() METHOD
+EditAction 1444222468348 Cell.java 286 3 3 0
