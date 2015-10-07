@@ -144,3 +144,7 @@ CompilationAction 1444223176254 TestGrid.java
 UnitTestCaseAction 1444223183578 TestGrid.java FAIL
 UnitTestSessionAction 1444223183578 TestGrid FAIL
 EditAction 1444223195632 TestGrid.java 400 2 2 1
+CompilationAction 1444223195879 TestGrid.java
+CompilationAction 1444223195880 TestGrid.java
+RefactoringAction 1444223210504 Grid.java ADD int getSize() METHOD
+EditAction 1444223210837 Grid.java 304 3 4 0
