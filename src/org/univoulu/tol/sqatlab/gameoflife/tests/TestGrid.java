@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.univoulu.tol.sqatlab.gameoflife.Cell;
 import org.univoulu.tol.sqatlab.gameoflife.Grid;
 
 public class TestGrid {
@@ -23,8 +24,9 @@ public class TestGrid {
 	}
 
 	@Test
-	public void testInitializeGrid() {
-		grid.initializeGrid();
+	public void testFindNeighbours() {
+		Cell[][] neighbours = grid.getNeighbours(1, 1);
+		assertEquals(8, neighbours.length);
 		
 	}
 }

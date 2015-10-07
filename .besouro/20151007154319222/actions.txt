@@ -181,3 +181,6 @@ RefactoringAction 1444223542570 Grid.java RENAME getNeigh=>Cell FIELD
 RefactoringAction 1444223545082 Grid.java RENAME getNeighr=>Cell METHOD
 RefactoringAction 1444223550107 Grid.java RENAME getNeighbours()=>Cell METHOD
 EditAction 1444223553089 Grid.java 505 6 6 0
+CompilationAction 1444223553420 Grid.java
+RefactoringAction 1444223605796 TestGrid.java ADD import org.univoulu.tol.sqatlab.gameoflife.Cell IMPORT
+EditAction 1444223606473 TestGrid.java 661 3 6 3
