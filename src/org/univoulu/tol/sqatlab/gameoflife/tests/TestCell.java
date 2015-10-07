@@ -20,10 +20,5 @@ public class TestCell {
 		cell.setAlive(true);
 		assertTrue(cell.getAlive());
 	}
-	
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 
 }
