@@ -10,3 +10,9 @@ RefactoringAction 1444221911356 TestCell.java ADD import org.univoulu.tol.sqatla
 RefactoringAction 1444221918704 TestCell.java ADD import org.junit.Before IMPORT
 RefactoringAction 1444221934420 TestCell.java ADD void testAlive() METHOD
 EditAction 1444221999251 TestCell.java 486 3 2 0
+CompilationAction 1444222003975 TestCell.java
+CompilationAction 1444222003975 TestCell.java
+CompilationAction 1444222003975 TestCell.java
+RefactoringAction 1444222025179 Cell.java ADD boolean alive FIELD
+RefactoringAction 1444222038708 Cell.java ADD boolean getAlive() METHOD
+EditAction 1444222046123 Cell.java 161 1 1 0
