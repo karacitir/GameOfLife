@@ -41,4 +41,12 @@ public class TestCell {
 		cell.update(3);
 		assertTrue(cell.getState());	
 	}
+	
+	@Test 
+	public void testCellUpdateWithFourNeighboursDies() {
+		cell.setState(true);
+		cell.update(4);
+		assertFalse(cell.getState());	
+	}
+
 }
