@@ -17,7 +17,7 @@ public class TestCell {
 	
 	@Test
 	public void testAlive() {
-		
+		cell.setAlive(true);
 		assertTrue(cell.getAlive());
 	}
 	
