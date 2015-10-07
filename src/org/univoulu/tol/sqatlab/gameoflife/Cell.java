@@ -20,4 +20,6 @@ public class Cell {
 		else if (aliveNeighbours > 3)
 			this.state = false;
 	}
+	
+	
 }
