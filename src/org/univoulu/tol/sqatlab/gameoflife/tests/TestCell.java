@@ -23,9 +23,15 @@ public class TestCell {
 	
 	@Test 
 	public void testCellUpdateWithNoNeighbours() {
-		cell.setAlive(true);
+		cell.setState(true);
 		cell.update(0);
 		assertFalse(cell.getState());	
 	}
 
+	@Test 
+	public void testCellUpdateWithTwoNeighboursStayAlive() {
+		cell.setState(true);
+		cell.update(2);
+		assertTrue(cell.getState());	
+	}
 }

@@ -93,3 +93,13 @@ CompilationAction 1444222685753 TestCell.java
 CompilationAction 1444222685904 TestCell.java
 CompilationAction 1444222685904 TestCell.java
 EditAction 1444222688007 TestCell.java 550 3 6 2
+CompilationAction 1444222688253 TestCell.java
+UnitTestCaseAction 1444222691740 TestCell.java FAIL
+UnitTestSessionAction 1444222691741 TestCell FAIL
+CompilationAction 1444222699896 TestCell.java
+UnitTestCaseAction 1444222701556 TestCell.java OK
+UnitTestSessionAction 1444222701556 TestCell OK
+RefactoringAction 1444222710878 TestCell.java ADD void testCellUpdateWithNoNeighbours()/2 METHOD
+RefactoringAction 1444222717899 TestCell.java RENAME testCellUpdateWithNoNeighbours()/2=>void testCellUpdateWithTwoNeighbours() METHOD
+RefactoringAction 1444222720411 TestCell.java RENAME testCellUpdateWithTwoNeighbours()=>void testCellUpdateWithTwoNeighboursStayAlive() METHOD
+EditAction 1444222728032 TestCell.java 698 4 9 3
