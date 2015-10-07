@@ -9,9 +9,11 @@ public class Grid {
 		cells = new Cell[size][size];
 		this.size = size;
 	}
+	
 	public int getSize() {
 		return size;
 	}
+	
 	public Cell[][] getCells() {
 		return cells;
 	}
