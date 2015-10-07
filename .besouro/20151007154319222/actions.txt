@@ -103,3 +103,9 @@ RefactoringAction 1444222710878 TestCell.java ADD void testCellUpdateWithNoNeigh
 RefactoringAction 1444222717899 TestCell.java RENAME testCellUpdateWithNoNeighbours()/2=>void testCellUpdateWithTwoNeighbours() METHOD
 RefactoringAction 1444222720411 TestCell.java RENAME testCellUpdateWithTwoNeighbours()=>void testCellUpdateWithTwoNeighboursStayAlive() METHOD
 EditAction 1444222728032 TestCell.java 698 4 9 3
+UnitTestCaseAction 1444222737655 TestCell.java OK
+UnitTestSessionAction 1444222737656 TestCell OK
+RefactoringAction 1444222742987 TestCell.java ADD void testCellUpdateWithTwoNeighboursStayAlive()/2 METHOD
+RefactoringAction 1444222751503 TestCell.java RENAME testCellUpdateWithTwoNeighboursStayAlive()/2=>void testCellUpdateWithThreeNeighboursStayAlive() METHOD
+RefactoringAction 1444222758023 TestCell.java RENAME testCellUpdateWithThreeNeighboursStayAlive()=>void testCellUpdateWithThreeNeighboursIsReborn() METHOD
+EditAction 1444222762865 TestCell.java 851 5 12 4

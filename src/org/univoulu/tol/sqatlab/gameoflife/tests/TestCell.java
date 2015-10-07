@@ -34,4 +34,11 @@ public class TestCell {
 		cell.update(2);
 		assertTrue(cell.getState());	
 	}
+	
+	@Test 
+	public void testCellUpdateWithThreeNeighboursIsReborn() {
+		cell.setState(false);
+		cell.update(3);
+		assertTrue(cell.getState());	
+	}
 }
