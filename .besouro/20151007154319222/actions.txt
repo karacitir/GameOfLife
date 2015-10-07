@@ -115,3 +115,19 @@ RefactoringAction 1444222774580 TestCell.java ADD void testCellUpdateWithTwoNeig
 RefactoringAction 1444222781097 TestCell.java RENAME testCellUpdateWithTwoNeighboursStayAlive()/2=>void testCellUpdateWithFourNeighboursStayAlive() METHOD
 RefactoringAction 1444222788116 TestCell.java RENAME testCellUpdateWithFourNeighboursStayAlive()=>void testCellUpdateWithFourNeighboursDies() METHOD
 EditAction 1444222795790 TestCell.java 1001 6 15 5
+UnitTestCaseAction 1444222798121 TestCell.java OK
+UnitTestSessionAction 1444222798121 TestCell OK
+FileOpenedAction 1444222845614 TestGrid.java 216 1 1 0
+RefactoringAction 1444222861752 TestGrid.java ADD import org.junit.Before IMPORT
+RefactoringAction 1444222869670 TestGrid.java ADD void setup() METHOD
+RefactoringAction 1444222880703 TestGrid.java ADD Grid grid FIELD
+RefactoringAction 1444222896534 TestGrid.java ADD import org.univoulu.tol.sqatlab.gameoflife.Grid IMPORT
+RefactoringAction 1444222903305 TestGrid.java REMOVE test() METHOD
+RefactoringAction 1444222905317 TestGrid.java ADD void tes FIELD
+RefactoringAction 1444222909830 TestGrid.java RENAME tes=>void testCreateGrid FIELD
+RefactoringAction 1444222913344 TestGrid.java RENAME testCreateGrid=>void testCreateGrid30by FIELD
+RefactoringAction 1444222915856 TestGrid.java RENAME testCreateGrid30by=>void testCreateGrid30by30() METHOD
+RefactoringAction 1444222950871 Grid.java ADD Cell FIELD
+RefactoringAction 1444222982518 Grid.java ADD Cell FIELD
+RefactoringAction 1444222986032 Grid.java RENAME getC=>Cell METHOD
+EditAction 1444222987648 Grid.java 155 1 1 0
