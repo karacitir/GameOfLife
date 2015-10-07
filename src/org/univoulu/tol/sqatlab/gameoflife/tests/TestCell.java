@@ -18,14 +18,14 @@ public class TestCell {
 	@Test
 	public void testAlive() {
 		cell.setAlive(true);
-		assertTrue(cell.getAlive());
+		assertTrue(cell.getState());
 	}
 	
 	@Test 
 	public void testCellUpdateWithNoNeighbours() {
 		cell.setAlive(true);
 		cell.update();
-		assertFalse(cell.getAlive());	
+		assertFalse(cell.getState());	
 	}
 
 }
