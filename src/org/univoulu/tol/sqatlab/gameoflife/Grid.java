@@ -29,10 +29,10 @@ public class Grid {
 		ArrayList<Cell> neighbours = new ArrayList<>();
 		
 		for (int x = i1 - 1; x < i1 + 2; x++) {
-			for (int y = i2 -1; y < i2 + 2; y++ ) {
+			for (int y = i2 - 1; y < i2 + 2; y++ ) {
 			
 				Cell cell = cells[x][y];
-				
+				System.out.println(x + " " + y);
 				if (x != i1 && y != i2)
 					neighbours.add(cell);
 			}
