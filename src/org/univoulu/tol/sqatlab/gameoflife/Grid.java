@@ -72,6 +72,13 @@ public class Grid {
 		return neighbours;
 	}
 	
+	public Cell getCell(int x, int y) throws Exception {
+		if (x < 0 || x >= size || y < 0 || y >= size)
+			throw new Exception("Exception");
+		
+		return cells[x][y];
+	}
+	
 	public Cell[][] getCells() {
 		return cells;
 	}

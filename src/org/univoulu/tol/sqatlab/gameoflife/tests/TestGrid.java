@@ -40,4 +40,16 @@ public class TestGrid {
 		ArrayList<Cell> aliveNeighbours = grid.getAliveNeighbours(1, 1);
 		assertEquals(1, aliveNeighbours.size());
 	}
+	
+	@Test(expected=Exception.class)
+	public void testGetCellFromGridException() {
+		
+		try {
+			Cell cell = grid.getCell(-1, 0);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 }
