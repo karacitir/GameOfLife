@@ -35,16 +35,16 @@ public class Grid {
 		for (int x = i1 - 1; x < i1 + 2; x++) {
 			for (int y = i2 - 1; y < i2 + 2; y++ ) {
 			
-				if (x >= 0 && x < size && y >= 0 && y < size) {
+				Cell cell;
 				
-					Cell cell = cells[x][y];
-					
+				try {
+					cell = getCell(x, y);
 					neighbours.add(cell);
-					
 					if (x == i1 && y == i2) {
 						neighbours.remove(cell);
 					}
-				}
+					
+				} catch (CustomLifeException e){}
 			}
 		}
 		
@@ -72,9 +72,9 @@ public class Grid {
 		return neighbours;
 	}
 	
-	public Cell getCell(int x, int y) throws Exception {
+	public Cell getCell(int x, int y) throws CustomLifeException {
 		if (x < 0 || x >= size || y < 0 || y >= size)
-			throw new Exception("Exception");
+			throw new CustomLifeException("Exception");
 		
 		return cells[x][y];
 	}
