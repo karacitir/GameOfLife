@@ -1,0 +1,7 @@
+FileOpenedAction 1444309926046 TestCell.java 1001 6 15 5
+RefactoringAction 1444309935583 TestCell.java ADD void testC FIELD
+RefactoringAction 1444309942138 TestCell.java RENAME testC=>void testCellGetException() METHOD
+RefactoringAction 1444310032828 Grid.java ADD Cell getCell(int, int) METHOD
+FileOpenedAction 1444310232293 TestGrid.java 992 4 11 4
+RefactoringAction 1444310245088 TestCell.java REMOVE testCellGetException() METHOD
+EditAction 1444310248810 TestCell.java 1001 6 15 5
