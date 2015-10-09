@@ -58,6 +58,27 @@ public class Grid {
 		
 	}
 	
+	public void drawGrid() {
+		
+for (int x = 0; x < size; x++) {
+			
+			for (int y = 0; y < size; y++) {
+				Cell cell = getCell(x, y);
+				
+				
+				if (cell.getState())
+					System.out.print("X");
+				else
+					System.out.print("-");
+				
+				if ( (y+1) == size)
+					System.out.println("");
+			
+		
+			}
+		}
+
+	}
 	public ArrayList<Cell> getNeighbours(int i1, int i2) {
 		ArrayList<Cell> neighbours = new ArrayList<>();
 				
