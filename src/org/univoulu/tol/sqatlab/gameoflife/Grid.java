@@ -68,6 +68,7 @@ public class Grid {
 				} catch(Exception e){}		
 			}
 		}
+		System.out.println("");
 	}
 	
 	public ArrayList<Cell> getNeighbours(int i1, int i2) {

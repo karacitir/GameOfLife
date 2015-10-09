@@ -63,6 +63,8 @@ public class TestGrid {
 		neighbours.get(6).setState(true);
 		neighbours.get(7).setState(true);
 		
+		grid.drawGrid();
+		
 		grid.updateGrid();
 		neighbours = grid.getNeighbours(3, 3);
 
