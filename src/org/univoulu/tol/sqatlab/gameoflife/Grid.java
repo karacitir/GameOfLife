@@ -35,20 +35,23 @@ public class Grid {
 		for (int x = 0; x < size; x++) {
 			
 			for (int y = 0; y < size; y++) {
+				Cell cellToUpdate = null;
 				try {
-				Cell cellToUpdate = getCell(x, y);
+				cellToUpdate = getCell(x, y);
 				List<Cell> aliveList = getAliveNeighbours(x, y);
 				cellToUpdate.update(aliveList.size());
 				
 				} catch(Exception e){}
 				
-				if (cellToUpdate)
-					System.out.print("X");
-				else
-					System.out.print("-");
-				
-				if ( (x+1) == size)
-					System.out.println("");
+				if (cellToUpdate != null) {
+					if (cellToUpdate.getState())
+						System.out.print("X");
+					else
+						System.out.print("-");
+					
+					if ( (y+1) == size)
+						System.out.println("");
+				}
 		
 			}
 		}
