@@ -35,11 +35,11 @@ public class Grid {
 		for (int x = 0; x < size; x++) {
 			
 			for (int y = 0; y < size; y++) {
-				Cell cellToUpdate = null;
+				
 				try {
-				cellToUpdate = getCell(x, y);
-				List<Cell> aliveList = getAliveNeighbours(x, y);
-				cellToUpdate.update(aliveList.size());
+					Cell cellToUpdate = getCell(x, y);
+					List<Cell> aliveList = getAliveNeighbours(x, y);
+					cellToUpdate.update(aliveList.size());
 				
 				} catch(Exception e){}
 			}
