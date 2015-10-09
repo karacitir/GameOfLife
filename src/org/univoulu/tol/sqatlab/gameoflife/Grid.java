@@ -64,7 +64,6 @@ public class Grid {
 				if ( (y+1) == size)
 					System.out.println("");
 	
-				
 				} catch(Exception e){}		
 			}
 		}
@@ -96,9 +95,14 @@ public class Grid {
 	public ArrayList<Cell> getAliveNeighbours(int i1, int i2) {
 		ArrayList<Cell> neighbours = new ArrayList<>();
 		
+		
+		if (i1 == 3 && i2 == 2)
+			i1 += 0;
+		
 		for (int x = i1 - 1; x < i1 + 2; x++) {
 			for (int y = i2 - 1; y < i2 + 2; y++ ) {
 			
+				
 				Cell cell = cells[x][y];
 				
 				if (cell.getState()) {

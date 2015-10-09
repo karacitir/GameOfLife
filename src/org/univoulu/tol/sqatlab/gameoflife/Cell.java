@@ -3,6 +3,11 @@ package org.univoulu.tol.sqatlab.gameoflife;
 public class Cell {
 
 	private boolean state = false;
+	final private String name;
+	
+	public Cell(String name) {
+		this.name = name;
+	}
 	
 	public void setState(boolean state) {
 		this.state = state;
