@@ -1,6 +1,7 @@
 package org.univoulu.tol.sqatlab.gameoflife;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Grid {
 
@@ -27,6 +28,31 @@ public class Grid {
 				cells[x][y] = new Cell();
 			}
 		}
+	}
+	
+	public void updateGrid() {
+		
+		for (int x = 0; x < size; x++) {
+			
+			for (int y = 0; y < size; y++) {
+				try {
+				Cell cellToUpdate = getCell(x, y);
+				List<Cell> aliveList = getAliveNeighbours(x, y);
+				cellToUpdate.update(aliveList.size());
+				
+				} catch(Exception e){}
+				
+				if (cellToUpdate)
+					System.out.print("X");
+				else
+					System.out.print("-");
+				
+				if ( (x+1) == size)
+					System.out.println("");
+		
+			}
+		}
+		
 	}
 	
 	public ArrayList<Cell> getNeighbours(int i1, int i2) {

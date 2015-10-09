@@ -53,4 +53,26 @@ public class TestGrid {
 	public void testGetCellFromGridException() throws Exception {
 		Cell cell = grid.getCell(-1, 0);		
 	}
+	
+	@Test
+	public void testUpdateGrid() {
+		ArrayList<Cell> neighbours = grid.getNeighbours(3, 3);
+		neighbours.get(1).setState(true);
+		neighbours.get(4).setState(true);
+		neighbours.get(5).setState(true);
+		neighbours.get(6).setState(true);
+		neighbours.get(7).setState(true);
+		
+		grid.updateGrid();
+		neighbours = grid.getNeighbours(3, 3);
+
+		assertFalse(neighbours.get(0).getState());
+		assertFalse(neighbours.get(1).getState());
+		assertFalse(neighbours.get(2).getState());
+		assertTrue(neighbours.get(3).getState());
+		assertTrue(neighbours.get(4).getState());
+		assertFalse(neighbours.get(5).getState());
+		assertTrue(neighbours.get(6).getState());
+		assertTrue(neighbours.get(7).getState());
+	}
 }
