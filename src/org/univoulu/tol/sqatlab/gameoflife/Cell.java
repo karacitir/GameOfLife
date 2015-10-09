@@ -3,7 +3,7 @@ package org.univoulu.tol.sqatlab.gameoflife;
 public class Cell {
 
 	private boolean state = false;
-	final private String name;
+	private String name;
 	
 	public Cell(String name) {
 		this.name = name;
@@ -15,6 +15,10 @@ public class Cell {
 	
 	public boolean getState() {
 		return state;
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	public void update(int aliveNeighbours) {

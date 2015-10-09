@@ -25,7 +25,7 @@ public class Grid {
 		for (int x = 0; x < size; x++) {
 			
 			for (int y = 0; y < size; y++) {
-				cells[x][y] = new Cell();
+				cells[x][y] = new Cell(x + " " + y);
 			}
 		}
 	}

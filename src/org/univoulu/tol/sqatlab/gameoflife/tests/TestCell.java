@@ -12,7 +12,7 @@ public class TestCell {
 	
 	@Before
 	public void setup() {
-		cell = new Cell();
+		cell = new Cell("");
 	}
 	
 	@Test
