@@ -32,3 +32,6 @@ UnitTestSessionAction 1444376679947 TestGrid FAIL
 RefactoringAction 1444376726022 Grid.java ADD void draw FIELD
 RefactoringAction 1444376727534 Grid.java RENAME draw=>void drawGrid() METHOD
 EditAction 1444376781517 Grid.java 2597 10 17 0
+CompilationAction 1444376781853 Grid.java
+CompilationAction 1444376896288 Grid.java
+EditAction 1444376899999 Grid.java 2429 10 18 0

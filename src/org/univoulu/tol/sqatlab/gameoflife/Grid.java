@@ -42,30 +42,20 @@ public class Grid {
 				cellToUpdate.update(aliveList.size());
 				
 				} catch(Exception e){}
-				
-				if (cellToUpdate != null) {
-					if (cellToUpdate.getState())
-						System.out.print("X");
-					else
-						System.out.print("-");
-					
-					if ( (y+1) == size)
-						System.out.println("");
-				}
-		
 			}
 		}
-		
+		drawGrid();
 	}
 	
 	public void drawGrid() {
 		
-for (int x = 0; x < size; x++) {
+		for (int x = 0; x < size; x++) {
 			
 			for (int y = 0; y < size; y++) {
+				
+				try {
 				Cell cell = getCell(x, y);
-				
-				
+	
 				if (cell.getState())
 					System.out.print("X");
 				else
@@ -73,12 +63,13 @@ for (int x = 0; x < size; x++) {
 				
 				if ( (y+1) == size)
 					System.out.println("");
-			
-		
+	
+				
+				} catch(Exception e){}		
 			}
 		}
-
 	}
+	
 	public ArrayList<Cell> getNeighbours(int i1, int i2) {
 		ArrayList<Cell> neighbours = new ArrayList<>();
 				
