@@ -1,7 +1,7 @@
 package org.univoulu.tol.sqatlab.gameoflife;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
 public class Grid {
 
@@ -21,37 +21,57 @@ public class Grid {
 		return size;
 	}
 	
-	public void initializeGrid() {
+	public void initializeGrid(double d) {
+		Random r = new Random();
+		
 		for (int x = 0; x < size; x++) {
 			
 			for (int y = 0; y < size; y++) {
-				cells[x][y] = new Cell(x + " " + y);
+				double c = r.nextDouble();
+				
+				cells[x][y] = new Cell(x + "" + y);
+				
+				if (c <= d) {
+					cells[x][y].setState(true);
+				}
 			}
 		}
 	}
+		
+	public void setAlive(int i, int i1) {
+        if (i >= 0 && i < size && i1 >= 0 && i1 < size) {
+        	cells[i][i1].setState(true);
+        }
+    }
+	
+	public void setDead(int i, int i1) {
+        if (i >= 0 && i < size && i1 >= 0 && i1 < size) {
+        	cells[i][i1].setState(false);
+        }
+    }
+	
 	
 	public void updateGrid() {
-		
+		int[][] aliveNeighbourCountTable = this.getAliveNeighboursCountToTable();
 		for (int x = 0; x < size; x++) {
 			
 			for (int y = 0; y < size; y++) {
 				
 				try {
-					Cell cellToUpdate = getCell(x, y);
-					List<Cell> aliveList = getAliveNeighbours(x, y);
-					cellToUpdate.update(aliveList.size());
+					this.updateCell(x, y, aliveNeighbourCountTable[x][y]);
 				
-				} catch(Exception e){}
+				} catch(CustomLifeException e){
+					System.out.println("Custom Life Exception occurred");
+				}
 			}
 		}
-		drawGrid();
 	}
 	
 	public void drawGrid() {
-		
-		for (int x = 0; x < size; x++) {
+
+		for (int y = 0; y < size; y++) {
 			
-			for (int y = 0; y < size; y++) {
+			for (int x = 0; x < size; x++) {
 				
 				try {
 				Cell cell = getCell(x, y);
@@ -61,7 +81,7 @@ public class Grid {
 				else
 					System.out.print("-");
 				
-				if ( (y+1) == size)
+				if ( (x+1) == size)
 					System.out.println("");
 	
 				} catch(Exception e){}		
@@ -70,19 +90,25 @@ public class Grid {
 		System.out.println("");
 	}
 	
-	public ArrayList<Cell> getNeighbours(int i1, int i2) {
+	public ArrayList<Cell> getNeighbours(int i, int i1) {
 		ArrayList<Cell> neighbours = new ArrayList<>();
-				
-		for (int x = i1 - 1; x < i1 + 2; x++) {
-			for (int y = i2 - 1; y < i2 + 2; y++ ) {
+		
+		Cell targetCell = null;
+		try {
+			targetCell = getCell(i, i1);
+		} catch (Exception e){}
+		
+		
+		for (int x = i - 1; x < i + 2; x++) {
+			for (int y = i1 - 1; y < i1 + 2; y++ ) {
 			
 				Cell cell;
 				
 				try {
 					cell = getCell(x, y);
-					neighbours.add(cell);
-					if (x == i1 && y == i2) {
-						neighbours.remove(cell);
+					
+					if (!cell.getName().equalsIgnoreCase(targetCell.getName())) {
+							neighbours.add(cell);
 					}
 					
 				} catch (CustomLifeException e){}
@@ -92,31 +118,63 @@ public class Grid {
 		return neighbours;
 	}
 	
-	public ArrayList<Cell> getAliveNeighbours(int i1, int i2) {
-		ArrayList<Cell> neighbours = new ArrayList<>();
-		
-		
-		if (i1 == 3 && i2 == 2)
-			i1 += 0;
-		
-		for (int x = i1 - 1; x < i1 + 2; x++) {
-			for (int y = i2 - 1; y < i2 + 2; y++ ) {
+	public int[][] getAliveNeighboursCountToTable() {
 			
-				
-				Cell cell = cells[x][y];
-				
-				if (cell.getState()) {
-					neighbours.add(cell);
+		int[][] ret = new int[size][size];
+
+        for (int x = 0; x < size; x++) {
+            for (int y = 0; y < size; y++) {
+
+            	ret[x][y] = this.getAliveNeighboursCount(x, y);
+            }
+        }
+        
+        return ret;
+	}
+	
+	public int getAliveNeighboursCount(int i, int i1) {
+		ArrayList<Cell> neighbours = new ArrayList<>();
+		Cell targetCell = null;
+		try {
+			targetCell = getCell(i, i1);
+		} catch (Exception e){}
+		
+		
+		for (int x = i - 1; x < i + 2; x++) {
+			for (int y = i1 - 1; y < i1 + 2; y++ ) {
+			
+				try {
+					Cell cell = getCell(x,y);
 					
-					if (x == i1 && y == i2) {
-						neighbours.remove(cell);
+					if (!cell.getName().equals(targetCell.getName())) {
+						
+						if (cell.getState())
+							neighbours.add(cell);
+						
 					}
-				}
+				} catch(Exception e){}
 			}
 		}
 		
-		return neighbours;
+		return neighbours.size();
 	}
+	
+	public void updateCell(int x, int y, int aliveNeighbours) throws CustomLifeException {
+		
+        if (getCell(x,y).getState()) {
+            if (aliveNeighbours < 2) {
+                this.setDead(x, y);
+            }
+            if (aliveNeighbours > 3) {
+            	this.setDead(x, y);
+            }
+        } else {
+            if (aliveNeighbours == 3) {
+            	this.setAlive(x, y);
+            }
+        }
+	}
+	
 	
 	public Cell getCell(int x, int y) throws CustomLifeException {
 		if (x < 0 || x >= size || y < 0 || y >= size)

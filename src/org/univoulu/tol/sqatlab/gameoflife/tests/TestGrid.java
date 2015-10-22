@@ -17,7 +17,7 @@ public class TestGrid {
 	@Before
 	public void setup() {
 		grid = new Grid(10);
-		grid.initializeGrid();
+		grid.initializeGrid(0.0);
 	}
 	
 	@Test
@@ -42,16 +42,16 @@ public class TestGrid {
 	}
 	
 	@Test
-	public void testFindAliveNeighboursOne() {
-		ArrayList<Cell> neighbours = grid.getNeighbours(1, 1);
-		neighbours.get(0).setState(true);
-		ArrayList<Cell> aliveNeighbours = grid.getAliveNeighbours(1, 1);
-		assertEquals(1, aliveNeighbours.size());
+	public void testFindAliveNeighboursOne() throws Exception {
+		grid.getCell(0, 0).setState(true);
+		assertTrue(grid.getCell(0, 0).getState());
+		assertEquals(1, grid.getAliveNeighboursCount(1, 1));
 	}
 	
 	@Test(expected=CustomLifeException.class)
 	public void testGetCellFromGridException() throws Exception {
 		Cell cell = grid.getCell(-1, 0);		
+		assertNull(cell);
 	}
 	
 	@Test
@@ -66,6 +66,9 @@ public class TestGrid {
 		grid.drawGrid();
 		
 		grid.updateGrid();
+		
+		grid.drawGrid();
+		
 		neighbours = grid.getNeighbours(3, 3);
 
 		assertFalse(neighbours.get(0).getState());
