@@ -1,0 +1,32 @@
+FileOpenedAction 1444311835384 TestGrid.java 1285 5 12 4
+UnitTestCaseAction 1444311842100 TestGrid.java FAIL
+UnitTestSessionAction 1444311842101 TestGrid FAIL
+RefactoringAction 1444311853120 TestGrid.java ADD Exception e FIELD
+RefactoringAction 1444311855635 TestGrid.java REMOVE e FIELD
+UnitTestCaseAction 1444311874367 TestGrid.java OK
+UnitTestSessionAction 1444311874368 TestGrid OK
+RefactoringAction 1444311975795 CustomLifeException.java ADD CustomLifeException.java CLASS
+FileOpenedAction 1444311975963 CustomLifeException.java 712 5 4 0
+RefactoringAction 1444311997984 CustomLifeException.java RENAME CustomLifeException()=>CustomLifeException(String)/2 METHOD
+RefactoringAction 1444312018026 CustomLifeException.java REMOVE CustomLifeException(String, Throwable, boolean, boolean) METHOD
+RefactoringAction 1444312018028 CustomLifeException.java REMOVE CustomLifeException(String)/2 METHOD
+RefactoringAction 1444312018029 CustomLifeException.java REMOVE CustomLifeException(Throwable) METHOD
+RefactoringAction 1444312018029 CustomLifeException.java REMOVE CustomLifeException(String, Throwable) METHOD
+RefactoringAction 1444312063393 CustomLifeException.java ADD long serialVersionUID FIELD
+RefactoringAction 1444312077020 CustomLifeException.java REMOVE serialVersionUID FIELD
+RefactoringAction 1444312108069 TestGrid.java ADD import org.univoulu.tol.sqatlab.gameoflife.CustomLifeException IMPORT
+UnitTestCaseAction 1444312114913 TestGrid.java OK
+UnitTestSessionAction 1444312114913 TestGrid OK
+UnitTestCaseAction 1444312452343 TestGrid.java OK
+UnitTestSessionAction 1444312452344 TestGrid OK
+RefactoringAction 1444312500739 TestGrid.java RENAME testFindNeighbours()=>void testFindNeighboursXOne() METHOD
+RefactoringAction 1444312502250 TestGrid.java RENAME testFindNeighboursXOne()=>void testFindNeighboursXOneYOne() METHOD
+RefactoringAction 1444312506768 TestGrid.java ADD void testFindNeighboursXOneYOne()/2 METHOD
+RefactoringAction 1444312510783 TestGrid.java RENAME testFindNeighboursXOneYOne()/2=>void testFindNeighboursXZEROYOne() METHOD
+RefactoringAction 1444312512302 TestGrid.java RENAME testFindNeighboursXZEROYOne()=>void testFindNeighboursXZeroYOne() METHOD
+RefactoringAction 1444312514820 TestGrid.java RENAME testFindNeighboursXZeroYOne()=>void testFindNeighboursXZeroYZero() METHOD
+UnitTestCaseAction 1444312529407 TestGrid.java OK
+UnitTestSessionAction 1444312529408 TestGrid OK
+UnitTestCaseAction 1444312575328 TestGrid.java OK
+UnitTestSessionAction 1444312575328 TestGrid OK
+FileOpenedAction 1444312903332 Cell.java 454 3 3 0
